@@ -4,7 +4,8 @@ export const FeedbackOptions = ({ clickFeedback, options }) => {
   return (
     <FeedbackBox>
       {options.map(option => (
-        <FeedbackButton key={option} onClick={() => clickFeedback(option)}>
+        <FeedbackButton key={option} onClick={() => {
+          clickFeedback(option)}}>
           {option}
         </FeedbackButton>
       ))}
